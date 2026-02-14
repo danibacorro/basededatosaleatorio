@@ -21,13 +21,13 @@ FOR r IN c_errores LOOP
         WHEN 01090 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Apagado de la base de datos en proceso');
         WHEN 01917 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'El usuario o rol no existen');
         WHEN 01918 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'El usuario no existe');
-        WHEN 09911 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Contraseña incorrecta');
+        WHEN 09911 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Usuario o contraseña contienen un carácter no válido');
         WHEN 28000 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Cuenta bloqueada');
         WHEN 28001 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Contraseña expirada');
         WHEN 28002 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Caducidad de la contraseña cercana');
         WHEN 28009 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'La conexión a SYS se debe realizar desde SYSDBA o SYSOPER');
-        WHEN 28011 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Caducidad de la contraseña cercana');
-        ELSE DBMS_OUTPUT.PUT_LINE(CHR(9)||'Ha ocurrido un error ni identificado en el inicio de sesión');
+        WHEN 28011 THEN DBMS_OUTPUT.PUT_LINE(CHR(9)||'Error durante el periodo de gracia de la contraseña');
+        ELSE DBMS_OUTPUT.PUT_LINE(CHR(9)||'Ha ocurrido un error no identificado en el inicio de sesión');
     END CASE;
 END LOOP;
 END;
