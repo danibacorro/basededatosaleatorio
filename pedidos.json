@@ -1,0 +1,1 @@
+[{"_id":1,"id_cliente":1,"fecha":{"$date":"2025-10-15T00:00:00Z"},"items":[{"id_cafe":1,"cantidad":2},{"id_producto":1,"cantidad":1}],"total":13},{"_id":3,"id_cliente":3,"fecha":{"$date":"2025-10-17T00:00:00Z"},"items":[{"id_cafe":5,"cantidad":1},{"id_producto":5,"cantidad":1}],"total":15.75}]
