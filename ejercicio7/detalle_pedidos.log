@@ -1,0 +1,52 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Vie Feb 20 20:46:29 2026
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Archivo de Control:   detalle_pedidos.ctl
+Archivo de Datos:      detalle_pedidos.txt
+  Archivo de Errores:     detalle_pedidos.bad
+  Desechar Archivo: detalle_pedidos.dsc 
+ (Permitir todos los registros desechados)
+
+Número a cargar: ALL
+Número que omitir: 0
+Errores permitidos: 50
+Matriz de enlace:     250 filas, máximo de 1048576 bytes
+Continuación:    ninguno especificado
+Ruta de acceso utilizada:      Convencional
+
+Tabla DETALLE_PEDIDOS, cargada de cada registro lógico.
+Opción INSERT activa para esta tabla: INSERT
+Opción TRAILING NULLCOLS activada
+
+   Nombre Columna                  Posición   Long  Term Entorno Tipo de Dato
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                  FIRST     *   ;  O(") CHARACTER            
+PEDIDO_ID                            NEXT     *   ;  O(") CHARACTER            
+PRODUCTO_ID                          NEXT     *   ;  O(") CHARACTER            
+CANTIDAD                             NEXT     *   ;  O(") CHARACTER            
+SUBTOTAL                             NEXT     *   ;  O(") CHARACTER            
+
+
+Tabla DETALLE_PEDIDOS:
+  10 Filas cargadas correctamente.
+  0 Filas no cargadas debido a errores de datos.
+  0 Filas no cargadas porque todas las cláusulas WHEN han fallado.
+  0 Filas no cargadas porque todos los campos eran nulos.
+
+
+Espacio asignado a matriz de enlace:           322500 bytes (250 filas)
+Bytes de buffer de lectura: 1048576
+
+Total de registros lógicos omitidos:          0
+Total de registros lógicos leídos:          10
+Total de registros lógicos rechazados:         0
+Total de registros lógicos desechados:        0
+
+La ejecución empezó en Vie Feb 20 20:46:29 2026
+La ejecución terminó en Vie Feb 20 20:46:29 2026
+
+Tiempo transcurrido:     00:00:00.08
+Tiempo de CPU:         00:00:00.03

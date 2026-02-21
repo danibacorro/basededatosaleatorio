@@ -1,0 +1,12 @@
+LOAD DATA
+INFILE 'productos.txt'
+INTO TABLE productos
+FIELDS TERMINATED BY ';' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+  id        INTEGER EXTERNAL,
+  nombre    CHAR(100),
+  categoria CHAR(100),
+  precio    INTEGER EXTERNAL,
+  stock     INTEGER EXTERNAL
+)

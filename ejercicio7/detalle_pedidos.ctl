@@ -1,0 +1,12 @@
+LOAD DATA
+INFILE 'detalle_pedidos.txt'
+INTO TABLE detalle_pedidos
+FIELDS TERMINATED BY ';' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+  id          INTEGER EXTERNAL,
+  pedido_id   INTEGER EXTERNAL,
+  producto_id INTEGER EXTERNAL,
+  cantidad    INTEGER EXTERNAL,
+  subtotal    INTEGER EXTERNAL
+)

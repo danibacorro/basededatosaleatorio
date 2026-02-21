@@ -1,0 +1,10 @@
+"1";"Laptop HP";"Electronica";850;15
+"2";"Smartphone Samsung";"Electronica";650;20
+"3";"Teclado Mecanico";"Accesorios";75;30
+"4";"Mouse Inalambrico";"Accesorios";25;50
+"5";"Monitor 24";"Electronica";199;18
+"6";"Impresora Epson";"Oficina";120;10
+"7";"Silla Gamer";"Muebles";180;12
+"8";"Escritorio";"Muebles";220;8
+"9";"Auriculares Bluetooth";"Audio";60;25
+"10";"Disco Duro 1TB";"Almacenamiento";90;40
